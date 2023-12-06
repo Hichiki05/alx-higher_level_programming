@@ -4,9 +4,9 @@ def roman_to_int(roman_string):
     if (roman_string is None) or (type(roman_string) is not str):
         return 0
 
-    _number = len(roman_string)
-    value_int = romans[roman_string[_number-1]]
-    for i in range(_number - 1, 0, -1):
+    number = len(roman_string)
+    value_int = romans[roman_string[number-1]]
+    for i in range(number - 1, 0, -1):
         current_value = romans[roman_string[i]]
         previous_value = romans[roman_string[i-1]]
 
